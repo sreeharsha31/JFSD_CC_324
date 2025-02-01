@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiment-02</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1>Instagram</h1>
+      <img src="https://th.bing.com/th/id/OIP.6p4tmnHlFIQzF9q67IHDvwHaE4?rs=1&pid=ImgDetMain" alt="insta image" width="300" height="200">
+      <p>user_id:ursharsha31</p>
+      <p>followers: </p>
+      <p>following: </p>
+      <p>Posts: </p>
+      <a href="https://www.instagram.com/?hl=en">Instagram Link</a>
+  </body>
+</html>
