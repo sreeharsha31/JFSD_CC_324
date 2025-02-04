@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiment-2B</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <table>
+        <tr>
+          <th><p>Universities</p></th>
+          <th>no.ofstudents</th>
+          <th>Present</th>
+          <th>Absent</th>
+          <th>Percentage</th>
+        </tr>
+        <tr>
+          <td> <img src="https://th.bing.com/th/id/OIP.BtmnteiGN570HgXyY59a-wHaEU?w=283&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="" width="300" height="200"/></td>
+          
+          <td>100</td>
+          <td>55</td>
+          <td>45</td>
+        </tr>
+        <tr>
+          <td> <img src="https://assets.cntraveller.in/photos/60ba0c33ce82080a5bb7355a/master/pass/indias-prettiest-colleges-khalsa-college-amritsar-lead.jpg" alt="" width="300" height="200"/></td>
+          
+          <td>300</td>
+          <td>234</td>
+          <td>66</td>
+        </tr>
+        <tr>
+          <td> <img src="https://th.bing.com/th/id/OIP._sdwtCamEpPjo6KsmK2LxgHaDt?rs=1&pid=ImgDetMain" alt="" width="300" height="200"/></td>
+          
+          <td>500</td>
+          <td>250</td>
+          <td>250</td>
+        </tr>
+          
+        
+      </table>
+  </body>
+</html>
