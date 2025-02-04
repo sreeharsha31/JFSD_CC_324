@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        body {
+            font-family: Monospace, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background:white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+        .product p {
+            color: black;
+        }
+        .product .price {
+            font-size: 18px;
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Products list</h1>
+    <div class="container">
+        <div class="product">
+            <img src="data:image/jpeg;base64,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" alt="Product 1">
+            <h3>Premium Hair Dryer</h3>
+            <p>High-quality product description.</p>
+            <p class="price">500/-</p>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQxSoLDOvAkENMdNvSTgqbP3tlDJZv0O82rvL-02TM3fWxRUfmwOK7VfUaQUraMDcxJDeptDf8Dxd1av6ibIknQic47cXPjHt_jtkM7Vreti0t4bZAmedhBKuWHEGwNMyAO-lvmc-dm2bU&usqp=CAc" alt="Product 2">
+            <h3>Monitor</h3>
+            <p>4k resolution with 8gb Ram and 1tb storage support</p>
+            <p class="price">50,000/-</p>
+        </div>
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRXMpahkIpJA3pTponeIpsqTIvRPAGkUiIzIv2kQC0CcBBjCaM9-c9do1va4P5xQI7s4dBkPcK6SIIKoqEqrFb_tpr1epGWNh-CepEa02nTHozL9Hp2j64n-1Zn8Q4yJuvRrVfiuhk&usqp=CAc" alt="Product 3">
+            <h3>Iphone 16 PRO MAX</h3>
+            <p>best for Super Retina XDR display
+6.1‑inch (diagonal) all‑screen OLED display
+Advanced dual-camera system
+48MP Main: 26 mm, ƒ/1.6 aperture, sensor‑shift optical image stabilization, 100% Focus Pixels, support for super-high-resolution photos (24MP and 48MP)</p>
+            <p class="price">85,000/-</p>
+        </div>
+        <div class="product">
+            <img src="https://ts3.mm.bing.net/th?id=OIP.X5E06-ZlAjR-VTlUyIq68QHaFc&pid=15.1" alt="Product 3">
+            <h3>Asus Rog STrix G15 Laptop</h3>
+            <p>NVIDIA® GeForce RTX™ 4070 Laptop GPU
+Windows 11 Pro
+13th Gen Intel® Core™ i9
+Up to 16 inch, WQXGA (2560 x 1600) 16:10, Refresh Rate:240Hz, ROG Nebula Display</p>
+            <p class="price">95,000/-</p>
+        </div>
+    </div>
+</body>
+</html>
