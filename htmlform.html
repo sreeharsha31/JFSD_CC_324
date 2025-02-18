@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="SubmitForm">
+        <label for="name">Name:</label>
+        <input type = "text" id="name" name="name" required><br><br>
+        <label id="output"></label>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <input type="button" value="Submit" onclick="greet()">
+    </form>
+</body>
+</html>
+<script>
+    function greet()
+    {
+        alert("Password is incorrect");
+    }
+</script>
