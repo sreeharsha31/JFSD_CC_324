@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+<body>
+        <h1>click here</h1>
+
+        <script>
+            const h1 = document.querySelector('h1');
+            let count = 0;
+            var interval;
+            h1.addEventListener('click', ()=>{
+                if(interval) {
+                    alert("Already Running");
+                    return;
+                }
+                alert('Started');
+                interval= setInterval(start, 1000);
+            });
+
+            addEventListener('keypress', (event) => {
+                //mouseover to stop the interval
+                console.log(event);
+                if (interval) {
+                    clearInterval(interval);
+                    interval = null;
+                    alert('Stopped');
+                }
+            });
+
+            function start() {
+                h1.innerText = `hello World${count}`;
+                count++;
+            }
+        </script>
+
+
+</body>
+</html>
