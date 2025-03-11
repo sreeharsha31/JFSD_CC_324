@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Name : <input type="text" id="name" name="Person Name"> <br><br>
+        Age : <input type="text" id="age" name="Person Age"> <br><br>
+        city : <input type="text" id="city" name="Person City"> <br><br>
+        <button onclick="getdata(event)">Submit</button>
+    </form>
+    <script>
+        const name = document.getElementById('name');
+        const age = document.getElementById('age');
+        const city = document.getElementById('city');
+        const form = document.getElementById('form');
+        const personData1=[];
+        var personData;
+        function getdata(event){
+            event.preventDefault();
+            personData={
+                name: name.value,
+            age: age.value,
+            city: city.value
+        }
+        personData.push(personData1);
+        console.log(personData);
+        const strData = JSON.stringify(personData);
+        localStorage.setItem('personData',strData);
+    }
+    </script>
+</body>
+</html>
